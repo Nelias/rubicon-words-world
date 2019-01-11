@@ -34,21 +34,23 @@ demon3 = <<DEMON
         wwwwwwwww
 DEMON
 
+def cl(seconds)
+  sleep(seconds)
+  system("clear")
+end
+
 puts File.readlines 'game_banner.txt'
 
-sleep(3)
-system("clear")
+cl(3)
 
 puts "May all those phonemes not drive you crazy!!!"
 
-sleep(1.5)
-system("clear")
+cl(1.5)
 
 3.times do
   puts "w, u, v, t, d, p, b, a, o, i, e, k, g, h, s, z"
 
-  sleep(0.2)
-  system("clear")
+  cl(0.2)
   sleep(0.2)
 end
 
