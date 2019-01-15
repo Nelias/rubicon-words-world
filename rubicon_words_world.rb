@@ -74,5 +74,40 @@ end
 
 puts "What word would you like to reveal?"
 word = gets.chomp
+puts
 
-puts "You picked a word: #{word}"
+word.length.times do |i|
+  if word[i] == "h"
+    word[i] = "s"
+    puts word
+
+    word[i] = "k"
+    puts word
+    next
+  end
+
+  if word[i] == "s"
+    word[i] = "k"
+    puts word
+
+    word[i] = "h"
+    puts word
+    next
+  end
+
+  if word[i] == "k"
+    word[i] = "s"
+    puts word
+
+    word[i] = "h"
+    puts word
+    next
+  end
+
+  if word[i] == "a"
+    word[i] = "o"
+    puts word
+  end
+end
+
+puts
