@@ -6,8 +6,8 @@ demon1 = <<DEMON
           s   z
 
         wwwwwwwww
-
-
+ 
+ 
         wwwwwwwww
 DEMON
 
@@ -19,7 +19,7 @@ demon2 = <<DEMON
           z   s
 
         wwwwwwwww
-
+ 
         wwwwwwwww
 DEMON
 
