@@ -1,3 +1,5 @@
+require "phoneme_demon"
+
 def clean_sleep(seconds)
   sleep(seconds)
   system("clear")
