@@ -33,3 +33,16 @@ demon3 = <<DEMON
         wwwwwwwww
         wwwwwwwww
 DEMON
+
+4.times do
+  puts demon1
+  clean_sleep(0.05)
+  puts demon2
+  clean_sleep(0.05)
+  puts demon3
+  clean_sleep(0.05)
+  puts demon2
+  clean_sleep(0.05)
+  puts demon1
+  clean_sleep(0.05)
+end
