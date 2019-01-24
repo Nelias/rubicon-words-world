@@ -1,5 +1,3 @@
-require "phoneme_demon"
-
 def clean_sleep(seconds)
   sleep(seconds)
   system("clear")
@@ -25,18 +23,7 @@ puts "w, u, v, t, d, p, b, a, o, i, e, k, g, h, s, z"
 clean_sleep(1)
 
 # conjure phoneme demon
-4.times do
-  puts demon1
-  clean_sleep(0.05)
-  puts demon2
-  clean_sleep(0.05)
-  puts demon3
-  clean_sleep(0.05)
-  puts demon2
-  clean_sleep(0.05)
-  puts demon1
-  clean_sleep(0.05)
-end
+load "phoneme_demon.rb"
 
 puts "What word would you like to reveal?"
 word = gets.chomp
