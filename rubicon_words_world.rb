@@ -1,3 +1,5 @@
+system("printf '\e[8;50;120t'")
+
 def clean_sleep(seconds)
   sleep(seconds)
   system("clear")
