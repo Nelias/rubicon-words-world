@@ -32,34 +32,35 @@ puts "What word would you like to reveal?"
 word = gets.chomp
 puts
 
-def additional_iteration(one, two, three, word, i)
+def additional_iteration(first_letter, second_letter, third_letter, word, i)
   
   word.length.times do |j|
+
     j += i + 1
 
-    if word[j] == two
-      word[j] = one
+    if word[j] == second_letter
+      word[j] = first_letter
       puts word
 
-      word[j] = three
-      puts word
-      next
-    end
-
-    if word[j] == one
-      word[j] = three
-      puts word
-
-      word[j] = two
+      word[j] = third_letter
       puts word
       next
     end
 
-    if word[j] == three
-      word[j] = one
+    if word[j] == first_letter
+      word[j] = third_letter
       puts word
 
-      word[j] = two
+      word[j] = second_letter
+      puts word
+      next
+    end
+
+    if word[j] == third_letter
+      word[j] = first_letter
+      puts word
+
+      word[j] = second_letter
       puts word
       next
     end
@@ -67,20 +68,20 @@ def additional_iteration(one, two, three, word, i)
   
 end
 
-def phoneme_demon(one, two, three, word, i)
+def phoneme_demon(first_letter, second_letter, third_letter, word, i)
 
-  if word[i] == one
-    additional_iteration(one, two, three, word, i)
+  if word[i] == first_letter
+    additional_iteration(first_letter, second_letter, third_letter, word, i)
 
-    word[i] = two
+    word[i] = second_letter
     puts word
 
-    additional_iteration(one, two, three, word, i)
+    additional_iteration(first_letter, second_letter, third_letter, word, i)
 
-    word[i] = three
+    word[i] = third_letter
     puts word
 
-    additional_iteration(one, two, three, word, i)
+    additional_iteration(first_letter, second_letter, third_letter, word, i)
   end
 
 end
